@@ -36,7 +36,7 @@ const linksContainer = document.getElementById("links__container");
 linkData.map((data) => {
   const singleLink = document.createElement("div");
   singleLink.className =
-    "bg-zinc-900/30 hover:bg-zinc-900/50 transition-all rounded-lg shadow-black shadow-md";
+    "bg-zinc-900/30 hover:bg-zinc-900/50 transition-all rounded-lg shadow-black shadow-md overflow-hidden";
   singleLink.innerHTML = `
      <a
               href=${data.label === "Mail" ? "mailto:" : ""}${data.href}
@@ -51,7 +51,7 @@ linkData.map((data) => {
               <div class="">
                 <h2 class="text-lg lg:text-xl font-bold">${data.label}</h2>
                 <p
-                  class="underline underline-offset-4 font-semibold text-purple-500 line-clamp-1 tracking-tighter overflow-auto"
+                  class="underline underline-offset-4 font-semibold text-purple-500 line-clamp-1 tracking-tighter"
                 >
                 ${data.href}
                 </p>
