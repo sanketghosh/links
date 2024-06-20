@@ -51,7 +51,7 @@ linkData.map((data) => {
               <div class="">
                 <h2 class="text-lg lg:text-xl font-bold">${data.label}</h2>
                 <p
-                  class="underline underline-offset-4 font-semibold text-purple-500 line-clamp-1 tracking-tighter"
+                  class="underline underline-offset-4 font-semibold text-purple-500 line-clamp-1 tracking-tighter overflow-auto"
                 >
                 ${data.href}
                 </p>
